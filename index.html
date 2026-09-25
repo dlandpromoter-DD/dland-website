@@ -10,7 +10,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark)}
 a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:auto;padding:0 22px}
 header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{height:62px;width:auto;max-width:220px;object-fit:contain;display:block}
+.nav{height:125px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{height:108px;width:330px;max-width:330px;object-fit:contain;object-position:left center;display:block}
 .navlinks{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--orange)}
 .cta{background:var(--orange);color:white;padding:12px 17px;border-radius:9px}
 .hero{background:linear-gradient(135deg,#fff8f1 0%,#fff 48%,#f5effa 100%);padding:78px 0 70px}
@@ -31,7 +31,7 @@ section{padding:72px 0}.section-head{display:flex;justify-content:space-between;
 .card{border:1px solid var(--line);border-radius:18px;padding:24px;background:white}.card h3{margin:0 0 10px;font-size:21px}.card p{color:var(--muted);line-height:1.55}
 .project{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:stretch}
 .project-visual{min-height:420px;border-radius:24px;background:linear-gradient(145deg,#ff7a18,#792fb1);padding:30px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
-.project-visual:after{content:"VETRI NAGAR";position:absolute;top:30px;right:-55px;transform:rotate(90deg);font-weight:900;letter-spacing:4px;opacity:.18;font-size:42px}
+
 .project-info{padding:10px}.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0}
 .stat{padding:16px;border-radius:14px;background:var(--light)}.stat strong{display:block;font-size:21px;margin-bottom:4px}.stat small{color:var(--muted)}
 .list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:0;list-style:none}.list li{padding:13px;border:1px solid var(--line);border-radius:11px}
@@ -40,9 +40,10 @@ section{padding:72px 0}.section-head{display:flex;justify-content:space-between;
 input,select,textarea{width:100%;padding:13px;margin:7px 0 13px;border:1px solid #ddd;border-radius:9px;font:inherit}textarea{min-height:100px}
 footer{padding:25px 0;background:#111;color:#aaa;font-size:13px}.mobile-menu{display:none}
 @media(max-width:850px){.hero-grid,.project,.contactgrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.navlinks{display:none}.mobile-menu{display:block}.hero{padding:52px 0}h1{font-size:45px}section{padding:55px 0}}
-.hero-card.hero-photo{padding:0;min-height:430px;background:#111}.hero-photo>img{width:100%;height:430px;object-fit:cover;display:block}.hero-overlay{position:absolute;inset:0;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(0,0,0,.05) 20%,rgba(0,0,0,.78) 100%)}.hero-overlay h2{font-size:34px;position:relative;margin:0 0 10px}.hero-overlay p{color:#eee;position:relative;line-height:1.6;margin:0 0 12px}.hero-overlay .price{position:relative;left:auto;right:auto;bottom:auto}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}.gallery figure{margin:0;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.08)}.gallery img{width:100%;height:330px;object-fit:cover;display:block}.gallery figcaption{padding:14px 16px;font-weight:800}.logo{background:#fff;border-radius:8px;padding:2px}@media(max-width:850px){.gallery{grid-template-columns:1fr}.gallery img{height:250px}.logo{height:54px;max-width:190px}}</style>
+.hero-card.hero-photo{padding:0;min-height:430px;background:#111}.hero-photo>img{width:100%;height:430px;object-fit:cover;display:block}.hero-overlay{position:absolute;inset:0;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(0,0,0,.05) 20%,rgba(0,0,0,.78) 100%)}.hero-overlay h2{font-size:34px;position:relative;margin:0 0 10px}.hero-overlay p{color:#eee;position:relative;line-height:1.6;margin:0 0 12px}.hero-overlay .price{position:relative;left:auto;right:auto;bottom:auto}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}.gallery figure{margin:0;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.08)}.gallery img{width:100%;height:330px;object-fit:cover;display:block}.gallery figcaption{padding:14px 16px;font-weight:800}@media(max-width:850px){.gallery{grid-template-columns:1fr}.gallery img{height:250px}.logo{height:68px;width:205px;max-width:205px;object-fit:contain;object-position:left center;background:transparent;padding:0;border-radius:0;display:block}}</style>
 </head>
 <body>
+<!-- Clean logo header; no decorative text is overlaid on project images. -->
 <header><div class="wrap nav">
 <a href="#home"><img class="logo" src="dland_logo.png" alt="D Land Promoters & Developers logo"></a>
 <nav class="navlinks"><a href="#projects">Projects</a><a href="#why">Why D Land</a><a href="#location">Location</a><a href="#contact" class="cta">Enquire Now</a></nav>
