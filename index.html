@@ -40,7 +40,14 @@ section{padding:72px 0}.section-head{display:flex;justify-content:space-between;
 input,select,textarea{width:100%;padding:13px;margin:7px 0 13px;border:1px solid #ddd;border-radius:9px;font:inherit}textarea{min-height:100px}
 footer{padding:25px 0;background:#111;color:#aaa;font-size:13px}.mobile-menu{display:none}
 @media(max-width:850px){.hero-grid,.project,.contactgrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.navlinks{display:none}.mobile-menu{display:block}.hero{padding:52px 0}h1{font-size:45px}section{padding:55px 0}}
-.hero-card.hero-photo{padding:0;min-height:430px;background:#111}.hero-photo>img{width:100%;height:430px;object-fit:cover;display:block}.hero-overlay{position:absolute;inset:0;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(0,0,0,.05) 20%,rgba(0,0,0,.78) 100%)}.hero-overlay h2{font-size:34px;position:relative;margin:0 0 10px}.hero-overlay p{color:#eee;position:relative;line-height:1.6;margin:0 0 12px}.hero-overlay .price{position:relative;left:auto;right:auto;bottom:auto}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}.gallery figure{margin:0;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.08)}.gallery img{width:100%;height:330px;object-fit:cover;display:block}.gallery figcaption{padding:14px 16px;font-weight:800}@media(max-width:850px){.gallery{grid-template-columns:1fr}.gallery img{height:250px}.logo{height:68px;width:205px;max-width:205px;object-fit:contain;object-position:left center;background:transparent;padding:0;border-radius:0;display:block}}</style>
+.hero-card.hero-photo{padding:0;min-height:430px;background:#111}.hero-photo>img{width:100%;height:430px;object-fit:cover;display:block}.hero-overlay{position:absolute;inset:0;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(0,0,0,.05) 20%,rgba(0,0,0,.78) 100%)}.hero-overlay h2{font-size:34px;position:relative;margin:0 0 10px}.hero-overlay p{color:#eee;position:relative;line-height:1.6;margin:0 0 12px}.hero-overlay .price{position:relative;left:auto;right:auto;bottom:auto}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}.gallery figure{margin:0;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.08);width:100%;min-width:0}.gallery img{width:100%;height:330px;aspect-ratio:680/330;object-fit:cover;object-position:center;display:block}.gallery figcaption{padding:14px 16px;font-weight:800}@media(max-width:850px){.gallery{grid-template-columns:1fr}.gallery img{height:250px;width:100%;aspect-ratio:350/250;object-fit:cover;object-position:center;display:block}.logo{height:68px;width:205px;max-width:205px;object-fit:contain;object-position:left center;background:transparent;padding:0;border-radius:0;display:block}}
+.villa-showcase{background:#fff8f1}
+.villa-card{position:relative;border-radius:26px;overflow:hidden;background:#fff;box-shadow:0 18px 55px rgba(0,0,0,.12);border:1px solid #f0e4dc}
+.villa-card img{display:block;width:100%;height:520px;object-fit:cover}
+.villa-caption{position:absolute;left:24px;right:24px;bottom:24px;padding:18px 20px;border-radius:16px;background:rgba(20,20,20,.78);backdrop-filter:blur(8px);color:#fff;display:flex;justify-content:space-between;gap:15px;align-items:center}
+.villa-caption strong{font-size:22px}.villa-caption span{font-weight:800;color:#ffd0ad}
+@media(max-width:850px){.villa-card img{height:300px}.villa-caption{left:14px;right:14px;bottom:14px;padding:13px 15px;display:block}.villa-caption strong{font-size:17px;display:block;margin-bottom:4px}.villa-caption span{font-size:13px}}
+</style>
 </head>
 <body>
 <!-- Clean logo header; no decorative text is overlaid on project images. -->
@@ -64,6 +71,25 @@ footer{padding:25px 0;background:#111;color:#aaa;font-size:13px}.mobile-menu{dis
 <div class="project-info"><div class="statgrid"><div class="stat"><strong>2–4 Cents</strong><small>Plot sizes</small></div><div class="stat"><strong>₹8.90L</strong><small>Per cent</small></div><div class="stat"><strong>₹39L+</strong><small>1 BHK villa</small></div><div class="stat"><strong>₹46L+</strong><small>2 BHK villa</small></div></div>
 <h3>Bank Loan Facility</h3><p>Land – up to 70% | Villas – up to 85%</p><h3>Premium Facilities</h3>
 <ul class="list"><li>30 & 33 Feet Tar Road</li><li>Compound Wall</li><li>24/7 Water Connection</li><li>EB Connection</li><li>Street Light</li><li>Tree Plantation</li><li>Drainage System</li><li>Nearby Sulur Aerodrome</li></ul></div></div></div><div class="gallery"><figure><img src="vetri-nagar-site-1.jpeg" alt="Vetri Nagar site road and plots" loading="lazy"><figcaption>Vetri Nagar — Site Road & Plots</figcaption></figure><figure><img src="vetri-nagar-site-2.jpeg" alt="Vetri Nagar premium villa" loading="lazy"><figcaption>Premium Customised Villa</figcaption></figure></div></div></section>
+
+<section id="villa-2bhk" class="villa-showcase">
+<div class="wrap">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Premium Customised Villa</div>
+      <h2>2 BHK Villa</h2>
+    </div>
+    <p>Modern 2 BHK villa concept designed to complement the premium character of Vetri Nagar.</p>
+  </div>
+  <div class="villa-card">
+    <img src="2bhk-villa.png" alt="Premium customised 2 BHK villa at Vetri Nagar" loading="lazy">
+    <div class="villa-caption">
+      <strong>2 BHK Premium Villa</strong>
+      <span>Starting from ₹46 Lakhs</span>
+    </div>
+  </div>
+</div>
+</section>
 
 <section id="why"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Project advantages</div><h2>Designed for everyday convenience</h2></div></div>
 <div class="cards"><div class="card"><h3>🏫 Education</h3><p>Kendra Vidyalaya, Nava Bharathi School, Infant Jesus Matric. School, Young Indian Public School, Park Engineering College, Tamil Nadu College of Engineering and RVS College.</p></div>
